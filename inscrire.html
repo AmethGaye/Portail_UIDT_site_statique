@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="inscrire.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="form-container">
+        <div class="ins">
+            <h1>inscription</h1>
+        </div>
+        <form class="form_1" action="#">
+            <div class="form-item b">
+                <label for="nom">nom</label>
+                <input type="text" name="nom" id="nom" placeholder="nom" required>
+            </div>
+            <div class="form-item b">
+                <label for="nom">prénom</label>
+                <input type="text" name="nom" id="nom" placeholder="prénom" required>
+            </div>
+            <div class="form-item b">
+                <label for="nom">numéro de dossier</label>
+                <input type="number" name="nom" id="nom" placeholder="21030130042" required>
+            </div>
+            <div class="form-item">
+                <label for="nom">email</label>
+                <input type="email" name="nom" id="nom" placeholder="example@gmail.com" required>
+            </div>
+            <div class="form-item b">
+                <label for="nom">adresse</label>
+                <input type="text" name="nom" id="nom" placeholder="8196 Pikine Nord" required>
+            </div>
+            <div class="form-item b">
+                <label for="nom">numéro de telephone</label>
+                <input type="number" name="nom" id="nom" placeholder="781234313" required>
+            </div>
+            <div class="form-item .a">
+                <label for="ufr">UFR </label>
+                <select class="ufr" name="ufr" id="ufr">
+                    <option value="UFR-SET">UFR-SET</option>
+                    <option value="UFR-SES">UFR-SES</option>
+                    <option value="UFR-SANTE">UFR-SANTE</option>
+                    <option value="UFR-SI">UFR-SI</option>
+                </select>
+            </div>
+            <div class="form-item .a">
+                <label for="ufr">filiere </label>
+                <select class="ufr" name="ufr" id="ufr">
+                    <option value="LGI">LGI</option>
+                    <option value="LMI">LMI</option>
+                    <option value="LPC">LPC</option>
+                    <option value="LSEE">LSEE</option>
+                    <option value="MIO">MIO</option>
+                    <option value="LGI">MTH</option>
+                    <option value="LGI">LEA</option>
+                    <option value="LGI">LAC</option>
+                </select>
+            </div>
+
+            <div class="p-mobile">
+                <div class="h3">
+                  <h3>mode de paiment</h3>
+                </div>
+                <div class="opera">
+                    <div class="om">
+                        <label for="om">orange money</label>
+                        <input type="radio" id="om" name="radio" required>
+                    </div>
+                    <div class="wave">
+                        <label for="wave">wave</label>
+                        <input type="radio" id="om" name="radio">
+                    </div>
+                    <div class="free money">
+                        <label for="om">free money</label>
+                        <input type="radio" id="om" name="radio">
+                    </div>
+                </div>
+            </div>
+            <div class="button" onclick="f()">;
+              <input type="submit" name="submit" value="S'inscrire">
+            </div>
+        </form>
+    </div>
+
+    <script src="all.js"> </script>
+</body>
+
+</html>

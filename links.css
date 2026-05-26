@@ -1,0 +1,446 @@
+
+/* ________________________PREMIER FOND_______________________ */
+
+.fnd{
+    width:100%;
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center  center;
+    opacity: .8;
+    margin-bottom:1.5rem;
+    color:rgb(255, 255, 255);
+}
+.fnd div.i2{
+    position: relative;
+    z-index:999;
+}
+.fnd div h1{
+    font-size: 4.7rem;
+    padding: 0;
+    margin: 0;
+}
+.opaci{
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    z-index: -1;
+    background-color: rgba(0,0,0,.3);
+}
+/*__________________________________LOGO UIDT___________________________________ */
+.ut {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    margin: 70px 70px;
+}
+
+#logo {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+}
+
+.cadre {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 130px;
+    height: 130px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* _____________________________________HEADER_____________________________________ */
+.nav-container{
+    display: none;
+}
+.nav-container a{
+    text-decoration:none;
+    color:#333;
+}
+nav.sticky{
+    /* background:yellow; */
+    position: fixed;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height: 11vh;
+    background-color:white;
+    box-shadow: 0px 4px 15px -1px rgba(0, 0, 0, .15);
+    padding:30px 75px;
+    z-index: 1000;
+    transition: box-shadow ,background-color .5s ease;
+}
+.menu-container{
+    display:flex;
+    justify-content: space-between;
+    width:60%;
+}
+.menu-container .logo{
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: flex-end;
+    position: relative;
+    /* background:yellow; */
+    width:80px;
+}
+.logo div{
+    font-weight: 900;
+    font-size:1.5rem;
+    font-family: 'Arial Rounded MT Bold' , sans-serif;
+    color: #001c40;
+    /* background: red; */
+    position: relative;
+
+}
+.cap{
+    position: absolute;
+    top:-45%;
+    left:50%;
+    transform: rotate(10deg);
+}
+.menu-container .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    margin-right: .6rem;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item a{
+    color: #222;
+    padding:.7rem .6rem;
+    font-size:1rem;
+    
+}
+
+
+.item a:hover {
+    color: #001c40;
+    transition: all .2s ease;
+    position: relative;
+}
+
+.item::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 3.5px;
+    width: 0%;
+    background:#001c40; 
+    z-index: 991;
+    transition: all .4s ease;
+}
+
+.item::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 3.5px;
+    width: 100%;
+    background: rgba(137, 145, 165, 0.2);
+    z-index: 991;
+    transition: all .4s ease;
+}
+
+
+.item:not(.is-active):hover::before{
+    width: 100%;
+}
+.item.is-active::before{
+    width: 100%;
+}
+.is-active>a{
+   color: #001c40;
+   background: linear-gradient(to top , rgba(0, 0, 0,.035) 20%,rgba(255, 255, 255,.085) 80% );
+   transition: all .3s ease;
+   /* background-color: red; */
+}
+
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 230px;
+    min-height: 90px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px rgba(79, 129, 203, .2);
+    font-size: 1rem;
+    padding: 0 1rem 1.4rem 1rem;
+    z-index: 999;
+    margin-top: .5px;
+    transform: translateY(15%);
+    transform-origin: top;
+    transition: all .2s ease;
+    /* background: red; */
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sub-menu.m {
+    width: 300px;
+}
+
+.item {
+    position: relative;
+}
+
+._item_:hover .sub-menu {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+
+}
+
+.menu-container .menu .sub-menu li {
+    display: flex;
+}
+
+.sub-menu li:not(:last-child) {
+    display: flex;
+    border-bottom: 1px solid rgba(137, 145, 165, 0.3);
+}
+.sub-menu li a {
+    padding: .7rem 0;
+    transition: all .3s linear;
+    width: 100%;
+}
+
+.sub-menu li a:hover {
+    transform: translateX(8px);
+    color:black;
+}
+
+.fa-chevron-down {
+    font-size: .85rem;
+    color: #001c40;
+    padding: 2px;
+    transition: all .3s ease;
+}
+
+.item:hover .fa-chevron-down {
+    transform: rotate(-180deg);
+}
+
+.login span {
+    display: flex;
+}
+
+.login span a {
+    position: relative;
+    /* background: white; */
+    padding: .65rem .7rem;
+    border-radius: 8px;
+    border:1.5px solid rgba(0, 28, 64,.3);
+    box-shadow: 0 1px 3px  rgba(0,0,0,.015);
+    transition: all .4s ease;
+    overflow: hidden;
+}
+
+.login span a:hover {
+    color: white;
+    transition: all .3s ease;
+    background:#001c40; 
+    position: relative;
+    z-index: 2;
+}
+
+.fa-right-to-bracket{
+    padding-right: .4rem;
+}
+
+
+
+
+/* ______________________________ASIDE_________________________________________ */
+
+.aside .nav-aside{
+    border-left: 1px solid rgba(0, 28, 64,.2);
+    position: sticky;
+    top:25%;
+    left:100%;
+    height: 240px;
+    width: 250px;
+    display: flex;
+    font-size: .9rem;
+}
+.aside ul{
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    height:90%;
+    top:50%;
+    transform: translateY(-50%);
+    /* background: orange; */
+
+
+}
+.aside ul li{
+    width:100%;
+    display: flex;
+    height:calc(100% / 4);
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+.aside ul li a{
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color:black;
+    padding:0 1rem;
+    position: relative;
+    margin-left:-2.5px;
+}
+.aside ul li a:not(.active):hover{
+    background-color:rgba(176, 176, 176,.2); 
+    border-left:4px solid rgba(0, 28, 64,.2);
+    transition: all .1s ease;
+}
+
+.aside ul li a::before{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    content:attr(contain);
+}
+.nav-aside ul li .active{
+    background-color:rgba(228, 222, 219,.7); 
+    border-left:4px solid #6f1e51;
+    transition: all .2s ease;
+}
+
+/* ______________________________FOOTER__________________________________ */
+
+footer {
+    background:#0a1829;
+    display:grid;
+    height:400px;
+    position: relative;
+    grid-template: 65% 80px 1fr / 1fr 1fr 1fr ;
+    color:white;
+    gap:1rem;
+    padding:1rem;
+   
+}
+.ut-contain{
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* background-color: red; */
+}
+.ut-down{
+    margin:0;
+    left:20% 
+}
+footer a{
+    color:rgba(255, 255, 255,.7);
+}
+.ft-box{
+    display: flex;
+    /* background: orange; */
+    line-height: 1.4;
+}
+.ft-box h3{
+    padding: 1.5rem 0 .8rem;
+    /* background-color: yellow; */
+    position: relative;
+}
+.ft-box h3::before{
+    position: absolute;
+    content:"";
+    left:0;
+    bottom:0;
+    height: 3px;
+    width:45px;
+    background: #000;
+    background-color: #0bbfa7;
+    border-radius:2px;
+}
+
+.inside{
+    margin-top:.8rem;
+    /* background: yellow; */
+    color:rgba(255, 255, 255,.6);
+}
+.inside div{
+    line-height: 1.6;
+}
+.inside span{
+    font-size: 1.2rem;
+    padding-right:8px;
+}
+footer a:hover{
+    color:#0bbfa7;
+    transition:all .3s ease;
+}
+.email a{
+    padding:0;
+}
+.inside .fa-duotone{
+    padding-right: .8rem;
+    color:rgba(11, 191, 167,.6);
+}
+.social-media , .droit{
+    grid-column:1/-1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+.droit {
+    color:rgba(255, 255, 255,.6);
+}
+.droit span{
+    color:#0bbfa7;
+    font-size: 1rem;
+    /* font-weight: 600; */
+}
+.social-media{
+    align-items: center;
+}
+.social-media div{
+    display: flex;
+    position: relative;
+    width: 230px;
+    justify-content: space-between;
+    padding:0 .8rem;
+    background:#0a1829;
+    z-index: 1;
+
+}
+.social-media::before{
+    position: absolute;
+    content:"";
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    height:1.5px;
+    width:80%;
+    background-color: rgba(11, 191, 167,.3);
+}
+.social-media a{
+    font-size: 21px;
+}
