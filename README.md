@@ -2,7 +2,7 @@
 
 Portail d'information de l'Université Iba Der Thiam de Thiès
 
----
+--
 
 #### Présentation du Projet
 
@@ -12,7 +12,7 @@ L'objectif pédagogique était de mettre en pratique les compétences acquises e
 
 Le site a été entièrement développé **sans framework ni librairie externe**, en utilisant uniquement les technologies web natives : *HTML - CSS - JS*
 
----
+--
 
 ### Objectifs
 
@@ -24,9 +24,9 @@ Le projet vise à répondre à la problématique ci-dessus à travers les object
 4. **Offrir une expérience utilisateur fluide** — Intégrer des mécanismes d'interactivité (navigation collante, scroll-spy latéral, formulaires dynamiques) pour une navigation intuitive et agréable.
 5. **Garantir l'accessibilité** — Concevoir un site statique léger, ne nécessitant aucun serveur d'application, ouvrable directement dans un navigateur web.
 
----
+--
 
-## ⚡ Fonctionnalités Disponibles
+### Fonctionnalités Disponibles
 
 #### Page d'Accueil
 - Flux d'**actualités** : appels à candidatures (Master MPCA, Master BFA) et offres de bourses (Ashinaga, Conseil Indien des Relations Culturelles).
@@ -57,20 +57,14 @@ Le projet vise à répondre à la problématique ci-dessus à travers les object
 - **Inscription pédagogique** : documents nécessaires et démarches auprès des UFR.
 - **Grille tarifaire** : tableau synthétique des droits d'inscription par cycle.
 
-#### Inscription en Ligne (`inscrire.html`)
+#### Inscription en Ligne
 - Formulaire d'inscription dynamique avec :
   - Saisie des informations personnelles (nom, prénom, n° de dossier, email, adresse, téléphone).
   - Sélection de l'UFR et de la filière.
   - Choix du mode de paiement mobile (Orange Money, Wave, Free Money).
 - Validation HTML5 native des champs requis.
 
-#### Interactivité Globale (`all.js`)
-- **Menu de navigation sticky** : la barre de navigation se fixe en haut de l'écran lors du défilement.
-- **Indicateur de page active** : l'onglet correspondant à la page courante est visuellement mis en évidence.
-- **Scroll-spy latéral** : la barre de navigation latérale (pages Admin, Campus, Cours) se synchronise automatiquement avec le défilement.
-- **Design responsive** : adaptation automatique de la mise en page sur smartphones et tablettes grâce aux media queries CSS.
-
----
+--
 
 ### Comment Exécuter le Projet
 
@@ -80,9 +74,7 @@ Le projet est entièrement statique. Aucune installation ni serveur n'est néces
 2. Ouvrez le fichier **`index.html`** dans votre navigateur web.
 3. *(Optionnel)* Utilisez l'extension **Live Server** de VS Code pour bénéficier du rechargement automatique lors du développement.
 
----
-
----
+--
 
 ### Droits d'Auteur
 
