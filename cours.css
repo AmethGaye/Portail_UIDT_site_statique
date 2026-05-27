@@ -1,0 +1,90 @@
+*:not(ul){
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:1.1rem;
+}
+.cours-container{
+    position: relative;
+    right: 0;
+    display: grid;
+    grid-template: auto auto auto auto / 60% 30%;
+    margin-left:12%;
+    gap:3rem;
+    padding:1rem;
+    line-height:1.9;
+}
+.cours-container .co {
+   border-bottom: 1.5px solid rgba(0, 28, 64,.2);
+   padding-bottom: 3rem;
+}
+.cours-container .co:last-of-type {
+   border-bottom: none;
+}
+.cours-container h1{
+    padding-bottom:1rem;
+    position: relative;
+    color:#6f1e51;
+    margin-bottom:2.5rem;
+    margin-top: 1rem;
+}
+.cours-container h1::before{
+    position: absolute;
+    content:'';
+    left:0;
+    bottom:0;
+    height:7px;
+    width:70px;
+    background: #001c40;
+}
+.cours-container h2, h3{
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.cours-container h2::before{
+    position: absolute;
+    content:'';
+    left:0;
+    bottom:0;
+    height:4px;
+    width:70px;
+    background:#6f1e51;
+    border-radius:2px;
+}
+.aside{
+    grid-row:1/-1;
+    grid-column:2/3;
+    position: relative;
+}
+footer ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+footer a{
+    text-decoration: none;
+}
+
+/* ______________________________RESPONSIVE DESIGN (MOBILE)______________________________ */
+@media (max-width: 768px) {
+    .cours-container {
+        grid-template: auto / 1fr;
+        margin-left: 0;
+        gap: 2rem;
+        padding: 1.5rem 1rem;
+    }
+    .cours-container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+}
+

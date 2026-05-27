@@ -145,59 +145,303 @@ footer ul{
 footer a{
     text-decoration: none;
 }
-.form_2{
+/* ______________________________FORMULAIRE DEMANDE DE RELEVÉ______________________________ */
+.form_2 {
     display: flex;
     justify-content: center;
-    position: relative;
     align-items: center;
     width: 100%;
-    min-height:500px;
-    padding:1.5rem
+    padding: 4rem 1.5rem;
+    /* background: linear-gradient(135deg, #f4f7f9 0%, #e8ecf1 100%); */
+    position: relative;
 }
-.contain_{
-    width:50%;
-    min-height:500px;
-    padding:inherit;
 
+.contain_ {
+    width: 680px;
+    max-width: 100%;
+    background: white;
+    border-radius: 16px;
+    padding: 3rem 2.5rem;
+    position: relative;
+    overflow: hidden;
 }
-.h1{
+.contain_ .h1 {
     display: flex;
     justify-content: center;
+    margin-bottom: 0.5rem;
 }
-.contain_ h1{
-    margin-bottom:2rem;
-}
-.contain_ form{
-    width:100%;
-    min-height: 300px;
+.contain_ h1 {
+    font-size: 1.6rem;
+    color: #001c40;
+    margin-bottom: 0.3rem;
+    text-align: center;
     position: relative;
+    padding-bottom: 1rem;
+}
+.contain_ h1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background: #6f1e51;
+    border-radius: 2px;
+}
+
+/* --- Form Layout --- */
+.transcript-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* --- Form Groups (Label + Input) --- */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.form-group > label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #001c40;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding-left: 2px;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+    width: 100%;
+    height: 52px;
+    padding: 0 1.2rem;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: #333;
+    background: #f7f8fa;
+    border: 2px solid #e0e4ea;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+.form-group input[type="text"]:hover,
+.form-group input[type="email"]:hover,
+.form-group input[type="tel"]:hover {
+    border-color: #c5ccda;
+}
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus {
+    border-color: #6f1e51;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(111, 30, 81, 0.08);
+}
+.form-group input::placeholder {
+    color: #aab3c0;
+    font-weight: 400;
+}
+
+/* --- File Upload Zone --- */
+.file-group {
+    gap: 8px;
+}
+.file-instruction {
+    font-size: 0.82rem;
+    color: #7a8499;
+    font-style: italic;
+    padding-left: 2px;
+}
+.file-upload-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background:blue; */
+    gap: 12px;
+    padding: 1.8rem 1.5rem;
+    border: 2px dashed #c5ccda;
+    border-radius: 12px;
+    background: #fafbfc;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
 }
-.itm input{
-    width:400px;
-    height: 55px;
-    margin-bottom:1.5rem;
-    border-radius:999px;
-    padding:1rem;
-    font-size: 16px;
+.file-upload-wrapper:hover {
+    border-color: #6f1e51;
+    background: rgba(111, 30, 81, 0.02);
 }
-.itm_1{
+.file-upload-label {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #001c40;
+    transition: color 0.2s ease;
 }
-.itm_1 h2{
-    margin-top:2rem;
-} 
-.mn_button{
-    padding:1rem 3rem;
-    font-size:1rem;
-    border-radius: 999px;
+.file-upload-label i {
+    font-size: 2rem;
+    color: #6f1e51;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.file-upload-wrapper:hover .file-upload-label i {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+.file-upload-label span {
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: #001c40;
+}
+/* Masquer l'input file natif */
+.file-upload-wrapper input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.file-name-display {
+    font-size: 0.82rem;
+    color: #7a8499;
+    padding: 4px 12px;
+    background: #eef0f4;
+    border-radius: 6px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* --- Submit Button --- */
+.submit-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+.submit-btn {
+    width: 100%;
+    height: 54px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.5px;
+    color: white;
+    background: #001c40;
     border: none;
-    border: 1px solid #001c40; 
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
+.submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+    transition: left 0.5s ease;
+}
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px -4px rgba(111, 30, 81, 0.4);
+}
+.submit-btn:hover::before {
+    left: 100%;
+}
+.submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px -2px rgba(111, 30, 81, 0.3);
+}
+
+/* ______________________________RESPONSIVE DESIGN (MOBILE)______________________________ */
+@media (max-width: 768px) {
+    .camp-container {
+        grid-template: auto / 1fr;
+        width: 100%;
+        left: 0;
+        padding: 1rem;
+        gap: 2rem;
+    }
+    .camp-container > * {
+        padding-bottom: 2rem;
+    }
+    .camp-container h1 {
+        font-size: 1.8rem;
+    }
+    
+    /* Grille de photos (Lieux de vie, Sports) */
+    .tof-contain {
+        grid-template: auto / 1fr;
+        height: auto;
+        gap: 1.5rem;
+    }
+    .tof-contain > * {
+        height: auto;
+    }
+    .tof-contain .tof .nm {
+        height: 180px;
+    }
+
+    /* Blocs Logement & Resto/Transport */
+    .itme {
+        flex-direction: column;
+        height: auto;
+    }
+    .itme .img, .itme .txt {
+        width: 100%;
+        height: auto;
+    }
+    .resto.itme {
+        flex-direction: column-reverse; /* Conserver le texte avant l'image ou inverser */
+    }
+
+    /* Service Médical */
+    .sante .img {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .sante .img img {
+        width: 100% !important;
+        float: none !important;
+        margin-bottom: 1rem !important;
+        height: auto !important;
+    }
+
+    /* Formulaire Demande de Relevé */
+    .form_2 {
+        padding: 2.5rem 1rem;
+    }
+    .contain_ {
+        padding: 2rem 1.2rem;
+        border-radius: 12px;
+    }
+    .contain_ h1 {
+        font-size: 1.3rem;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"] {
+        height: 48px;
+        font-size: 0.95rem;
+    }
+    .file-upload-wrapper {
+        padding: 1.4rem 1rem;
+    }
+    .submit-btn {
+        height: 50px;
+        font-size: 1rem;
+    }
+}
+
 
 

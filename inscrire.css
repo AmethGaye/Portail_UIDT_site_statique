@@ -159,4 +159,42 @@ body{
 .button input:hover{
   background: rgba(0, 85, 139,.91);
 }
+
+/* ______________________________RESPONSIVE DESIGN (MOBILE)______________________________ */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+    .form-container {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem 1rem;
+        border-radius: 10px;
+    }
+    .form_1 {
+        height: auto;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .form_1 .form-item {
+        width: 100%;
+    }
+    .p-mobile {
+        height: auto;
+        min-height: auto;
+        gap: 10px;
+    }
+    .p-mobile .opera {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .button {
+        margin-top: 1rem;
+    }
+}
+
  

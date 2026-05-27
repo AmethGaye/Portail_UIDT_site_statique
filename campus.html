@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="campus.css">
   <link rel="stylesheet" href="links.css">
-  <title>Document</title>
+  <title>Campus Social - Université Iba Der Thiam de Thiès (UIDT)</title>
 </head>
 <body>
 
@@ -54,7 +54,7 @@
 
   <div class="fnd" style="background: url('images/campus.jpg') no-repeat 100% / 100%;">
     <div class="opaci"></div>
-      <div i2>
+      <div class="i2">
         <h1>campus social</h1>
       </div>
   </div>
@@ -217,32 +217,38 @@
   </div>
 
   <div class="form_2">
-
     <div class="contain_">
       <div class="h1">
-        <h1>formulaire de demande de relevé</h1>
+        <h1>Demande de relevé de notes</h1>
       </div>
-      <form action="#">
-        <div class="itm">
-          <input type="text" name="" id="" placeholder="votre numero de dossier">
+      <form action="#" class="transcript-form">
+        <div class="form-group">
+          <label for="dossier_releve">Numéro de dossier</label>
+          <input type="text" name="dossier" id="dossier_releve" placeholder="Ex: 21030130042" required>
         </div>
-        <div class="itm">
-          <input type="email" name="" id="" placeholder=" votre email">
+        <div class="form-group">
+          <label for="email_releve">Adresse e-mail</label>
+          <input type="email" name="email" id="email_releve" placeholder="votre.email@gmail.com" required>
         </div>
-        <div class="itm">
-          <input type="number" name="" id="" placeholder="numero de telephone">
+        <div class="form-group">
+          <label for="tel_releve">Numéro de téléphone</label>
+          <input type="tel" name="telephone" id="tel_releve" placeholder="78 123 45 67" required>
         </div>
-        <div class="itm_1">
-          <div class="h2">
-            <h2>Piece justificatif</h2>
+        <div class="form-group file-group">
+          <label>Pièce justificative</label>
+          <span class="file-instruction">Ajouter votre Quitus sous format PNG, JPG ou PDF</span>
+          <div class="file-upload-wrapper">
+            <label for="quitus_file" class="file-upload-label">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <span>Choisir un fichier...</span>
+            </label>
+            <input type="file" id="quitus_file" name="quitus" accept=".png,.jpg,.jpeg,.pdf" required>
+            <span id="file-name-display" class="file-name-display">Aucun fichier sélectionné</span>
           </div>
-          <h3 for="" style="margin:1.5rem 0">ajouter votre Cutus sous format png / pdf / jpg</h3>
-          <input class="mn_button" type="file">
         </div>
-        <div  >
-            <input class="mn_button"  type="submit" name="submit" value="valider">
+        <div class="submit-group">
+            <input class="submit-btn" type="submit" name="submit" value="Valider la demande">
         </div>
-        
       </form>
     </div>
   </div>
@@ -261,11 +267,11 @@
         <div >
             <h3>Acces Rapide</h3>
             <ul class="inside">
-                <li><a href="#"><span>•</span>inscription</a></li>
-                <li><a href="#"><span>•</span>administration</a></li>
-                <li><a href="#"><span>•</span>cours</a></li>
-                <li><a href="#"><span>•</span>campus</a></li>
-                <li><a href="#"><span>•</span>frais de scolarité</a></li>
+                <li><a href="inscrire.html"><span>•</span>inscription</a></li>
+                <li><a href="admin.html"><span>•</span>administration</a></li>
+                <li><a href="cours.html"><span>•</span>cours</a></li>
+                <li><a href="campus.html"><span>•</span>campus</a></li>
+                <li><a href="scolarite.html"><span>•</span>frais de scolarité</a></li>
             </ul>
         </div>
     </div>

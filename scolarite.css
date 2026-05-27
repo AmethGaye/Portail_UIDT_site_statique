@@ -118,3 +118,35 @@ footer ul{
 footer a{
     text-decoration: none;
 }
+
+/* ______________________________RESPONSIVE DESIGN (MOBILE)______________________________ */
+@media (max-width: 768px) {
+    .scol-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        left: 0;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    .scol-container > * {
+        margin-bottom: 2rem;
+    }
+    .scol-container h1 {
+        font-size: 1.8rem;
+    }
+    .scol-container h2 {
+        font-size: 1.4rem;
+    }
+    
+    /* Tableaux responsifs */
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    th, tr, td {
+        padding: 1rem 0.8rem;
+    }
+}

@@ -56,7 +56,14 @@
 
 /* _____________________________________HEADER_____________________________________ */
 .nav-container{
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 11vh;
+    padding: 30px 75px;
+    background-color: transparent;
+    transition: all 0.3s ease;
 }
 .nav-container a{
     text-decoration:none;
@@ -444,3 +451,138 @@ footer a:hover{
 .social-media a{
     font-size: 21px;
 }
+
+/* ______________________________RESPONSIVE DESIGN (MOBILE)______________________________ */
+@media (max-width: 768px) {
+    /* Header & Navigation */
+    header {
+        height: auto !important;
+        padding: 10px !important;
+    }
+    header.head {
+        height: auto;
+        padding: 15px;
+    }
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px !important;
+        position: relative;
+    }
+    .menu-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .menu-container .logo {
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .cap {
+        position: static;
+        transform: none;
+        margin-right: 8px;
+    }
+    .menu-container .menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+    }
+    .item {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+    .item a {
+        padding: 8px 10px;
+        width: 100%;
+        display: block;
+    }
+    .item::after {
+        display: none; /* Désactiver la barre sous les items sur mobile */
+    }
+    .sub-menu {
+        position: static;
+        width: 100% !important;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        padding: 0;
+        margin-top: 5px;
+        background: rgba(0, 0, 0, 0.03);
+        border-radius: 4px;
+    }
+    .sub-menu li a {
+        padding: 8px 15px;
+        text-align: center;
+    }
+    .sub-menu li a:hover {
+        transform: none;
+    }
+    .login_search {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    nav.sticky {
+        position: static;
+        height: auto;
+        padding: 15px !important;
+        box-shadow: none;
+    }
+
+    /* Bannières .fnd */
+    .fnd {
+        height: 180px;
+    }
+    .fnd div h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    /* Aside Navigation (Scroll Spy) - Masqué ou réarrangé sur mobile */
+    .aside {
+        display: none !important;
+    }
+
+    /* Footer */
+    footer {
+        grid-template: auto auto auto / 1fr;
+        height: auto;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+    .ut-contain {
+        justify-content: center;
+    }
+    .ut-down {
+        left: 0;
+        margin: 0 auto;
+    }
+    .ft-box {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    .ft-box h3::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .inside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-media div {
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+

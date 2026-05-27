@@ -420,3 +420,102 @@ aside {
     height: 200px;
     margin-top:2rem;
 }
+
+/* ______________________________RESPONSIVE DESIGN (MOBILE)______________________________ */
+@media (max-width: 768px) {
+    .uidt {
+        height: auto;
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+    }
+    .ut {
+        margin: 20px auto;
+    }
+    .txt {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .txt h1 {
+        font-size: 24px;
+        height: auto;
+        padding-bottom: 15px;
+    }
+    .txt h1::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .txt .describ {
+        position: static;
+        width: 100%;
+        min-height: auto;
+        margin-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .describ::before {
+        display: none;
+    }
+    .svg {
+        position: static;
+        width: 80%;
+        margin: 20px auto 0;
+        display: block;
+    }
+
+    /* Grille principale */
+    .container {
+        grid-template: auto / 1fr;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    
+    /* Section Actualités */
+    .section-1 {
+        grid-template: auto / 1fr;
+        gap: 1.5rem;
+    }
+    .box {
+        font-size: 0.9rem;
+    }
+    .box .itm:last-child {
+        min-height: auto;
+        padding-bottom: 4rem; /* de l'espace pour le bouton positionné de manière absolue */
+    }
+
+    /* Section UFR / Instituts */
+    .section-2 {
+        grid-column: 1 / -1;
+        margin-top: 1.5rem;
+        padding: 15px;
+    }
+    .sect-title h1 {
+        font-size: 1.5rem;
+    }
+    .reparti {
+        flex-direction: column;
+        height: auto;
+        gap: 1.5rem;
+    }
+    .formation {
+        width: 100%;
+        min-height: auto;
+    }
+
+    /* Partenaires */
+    .partenaire {
+        margin-top: 1.5rem;
+        padding: 10px;
+    }
+    .partenaire .part h1 {
+        font-size: 1.6rem;
+    }
+    .part-pic {
+        height: auto;
+        padding: 15px;
+    }
+    .part-pic img {
+        height: auto;
+        max-width: 100%;
+    }
+}
+
