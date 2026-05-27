@@ -1,132 +1,143 @@
-# Portail UIDT - Site Web Statique
+# 🎓 Portail UIDT — Site Web Statique
 
-Ce projet est un site web statique moderne faisant office de portail d'information pour l'**Université Iba Der Thiam de Thiès (UIDT)** au Sénégal. Il offre aux étudiants, aux enseignants et au public une vitrine interactive présentant la vie universitaire, l'organisation administrative, les procédures d'inscription, ainsi que la vie de campus.
-
----
-
-## 📋 Table des Matières
-
-1. [Aperçu du Projet](#-aperçu-du-projet)
-2. [Structure des Fichiers](#-structure-des-fichiers)
-3. [Description des Pages](#-description-des-pages)
-4. [Fonctionnalités Interactives (JavaScript)](#-fonctionnalités-interactives-javascript)
-5. [Styles et Charte Graphique](#-styles-et-charte-graphique)
-6. [Comment Exécuter le Projet](#-comment-exécuter-le-projet)
-7. [Contributeurs et Droits](#-contributeurs-et-droits)
+> Portail d'information de l'Université Iba Der Thiam de Thiès (Sénégal)
 
 ---
 
-## 🔍 Aperçu du Projet
+## 📌 Présentation du Projet
 
-L'**Université Iba Der THIAM de Thiès** est un établissement public d'enseignement supérieur sénégalais avec une forte orientation professionnelle. Ce portail a été conçu comme une application web statique légère pour regrouper les informations clés dans un parcours utilisateur simple et fluide.
+Ce projet est un **site web statique** conçu dans le cadre d'un **projet académique** durant l'année universitaire **2022 – 2023**, en **deuxième année de Licence (L2)** à l'Université Iba Der Thiam de Thiès (UIDT).
 
-*   **Technologies utilisées :** HTML5, CSS3, JavaScript (Vanilla JS), FontAwesome (Icones).
-*   **Polices :** Ubuntu (intégrée localement dans `/fonts`).
-*   **Design :** Structure asymétrique avec des barres de navigation latérales synchronisées au défilement (Scroll-spy).
+L'objectif pédagogique était de mettre en pratique les compétences acquises en **développement web front-end** (HTML, CSS, JavaScript) en réalisant un portail d'information fonctionnel et réaliste pour notre propre université.
 
----
+Le site a été entièrement développé **sans framework ni librairie externe**, en utilisant uniquement les technologies web natives :
 
-## 📁 Structure des Fichiers
-
-Voici l'organisation générale du répertoire du projet :
-
-```text
-Portail_UIDT_site_statique/
-│
-├── index.html            # Page d'accueil (Actualités, UFRs et Instituts)
-├── index.css             # Styles de mise en page pour la page d'accueil
-│
-├── admin.html            # Page Administration (Ressources humaines et services communs)
-├── admin.css             # Styles spécifiques à la page administration
-│
-├── campus.html           # Page Campus Social (Lieux de vie, transport, sport, santé & demande de relevé)
-├── campus.css            # Styles spécifiques à la page campus
-│
-├── scolarite.html        # Page Scolarité (Guides d'inscription, tarifs des frais de scolarité)
-├── scolarite.css         # Styles spécifiques à la page scolarité
-│
-├── inscrire.html         # Formulaire d'inscription administrative en ligne
-├── inscrire.css          # Styles du formulaire d'inscription
-│
-├── links.css             # Styles globaux partagés (navigation, footer, réinitialisations)
-├── all.js                # Fichier JavaScript contenant toute l'interactivité du site
-│
-├── css/                  # Feuilles de style pour FontAwesome (icônes)
-├── fonts/                # Polices de caractères (Ubuntu) importées localement
-├── webfonts/             # Fichiers de polices binaires pour FontAwesome
-└── images/               # Banques d'images (photos des campus, icônes, illustrations SVG)
-```
+| Technologie | Utilisation |
+| :--- | :--- |
+| **HTML5** | Structure sémantique de toutes les pages |
+| **CSS3** | Mise en page (Grid, Flexbox), animations et transitions |
+| **JavaScript (Vanilla)** | Interactivité (menu sticky, scroll-spy, validation de formulaires) |
+| **FontAwesome** | Icônes vectorielles (chargées localement) |
+| **Ubuntu Font** | Police de caractères principale (intégrée localement dans `/fonts`) |
 
 ---
 
-## 📄 Description des Pages
+## 🧩 Contexte et Problématique
 
-### 1. 🏠 Page d'Accueil (`index.html`)
-Cette page introduit l'université et propose :
-*   **Actualités :** Un flux d'appels à candidatures (Master MPCA, Master BFA) et d'offres de bourses (Ashinaga Sénégal, Conseil Indien des Relations Culturelles).
-*   **UFR et Établissements :** Une présentation claire des 4 Unités de Formation et de Recherche (UFR SES, UFR SET, UFR Santé, UFR SI), des 2 Instituts (IUT, ISFAR) et de l'École Supérieure (ENSA).
-*   **Partenaires :** Un bandeau affichant les partenaires stratégiques de l'université.
+L'**Université Iba Der Thiam de Thiès** est un établissement public d'enseignement supérieur sénégalais à forte orientation professionnelle. Elle regroupe **4 UFR** (Sciences Économiques et Sociales, Sciences et Technologies, Sciences de la Santé, Sciences de l'Ingénieur), **2 Instituts** (IUT, ISFAR) et **1 École Supérieure** (ENSA).
 
-### 2. 🏛️ Page Administration (`admin.html`)
-Elle détaille la structure organisationnelle de l'université :
-*   **Enseignants :** Répartition par grade (Professeurs Titulaires, Assimilés, Maîtres de Conférences, Assistants).
-*   **Personnel (P.A.O.) :** Répartition des cadres administratifs, techniques et des ouvriers.
-*   **Services Administratifs :** Description des fonctions du Rectorat, de la DAAP (Affaires Académiques) et de la Direction des Services Communs (Informatique, Matériel, Personnel).
-*   *Système d'accès rapide latéral facilitant la lecture.*
+### Constat
 
-### 3. 🌳 Page Campus Social (`campus.html`)
-Cette section est dédiée à la vie estudiantine et sociale :
-*   **Lieux de vie :** Détails des sites physiques principaux (Site VCN, ENSA, Hôtel du Rail) avec coordonnées géographiques et téléphoniques.
-*   **Logement & Transport :** Conseils sur les transports urbains (Clandos, bus TATA et bus du CROUS) avec les tarifs associés.
-*   **Sport & Santé :** Information sur les activités sportives disponibles (Football, Basket, Handball) et sur le service médical (prise en charge des ordonnances à 80%).
-*   **Formulaire de demande de relevé de notes :** Formulaire permettant de soumettre une demande administrative avec dépôt de pièce justificative (Quitus sous format PNG/PDF/JPG).
+À l'époque de la réalisation du projet, les étudiants de l'UIDT faisaient face à plusieurs difficultés :
 
-### 4. 🎓 Page Scolarité (`scolarite.html`)
-Elle rassemble les guides de procédure pour les rentrées :
-*   **Nouveaux bacheliers (via Campusen) :** Guide étape par étape pour le paiement des droits et la préinscription.
-*   **Anciens étudiants (via la plateforme ESPET) :** Étapes de réinscription en ligne.
-*   **Grille des tarifs :** Tableau synthétique des droits d'inscription (pédagogique + administratif) pour la Licence (25 000 FCFA), le Master (50 000 FCFA) et le Doctorat (75 000 FCFA).
+- **Informations dispersées** : les renseignements sur les procédures d'inscription, les frais de scolarité, la vie de campus et l'organisation administrative étaient répartis sur plusieurs supports (affichages physiques, groupes WhatsApp, bouche-à-oreille), sans point d'accès centralisé et fiable.
+- **Parcours étudiant peu lisible** : les nouveaux bacheliers orientés via Campusen et les anciens étudiants ne disposaient pas d'un guide clair et unifié décrivant les étapes d'inscription (administrative et pédagogique).
+- **Manque de visibilité** : l'université ne disposait pas d'une vitrine web légère et accessible présentant ses formations, ses campus et ses services de manière structurée.
 
-### 5. 📝 Page Inscription (`inscrire.html`)
-Un formulaire d'inscription dynamique permettant de renseigner :
-*   Les informations personnelles (nom, prénom, numéro de dossier, email, adresse, téléphone).
-*   L'UFR et la filière choisie (LGI, LMI, LPC, LSEE, MIO, MTH, LEA, LAC).
-*   Le mode de paiement mobile money (Orange Money, Wave, Free Money).
+### Problématique
+
+> **Comment centraliser et présenter de manière claire, accessible et interactive l'ensemble des informations essentielles à la vie universitaire de l'UIDT, à destination des étudiants, du personnel et du grand public ?**
 
 ---
 
-## ⚡ Fonctionnalités Interactives (`all.js`)
+## 🎯 Objectifs
 
-Le fichier JavaScript apporte des améliorations majeures à l'expérience utilisateur (UX) :
+Le projet vise à répondre à la problématique ci-dessus à travers les objectifs suivants :
 
-1.  **Menu de navigation fixe (Sticky Header) :** Dès que l'utilisateur fait défiler la page de plus de 55 pixels, la classe `.sticky` est ajoutée au menu de navigation pour le maintenir fixé en haut.
-2.  **Indicateur de page active :** Détecte l'URL courante (`window.location.pathname`) pour ajouter une classe `.is-active` sur l'onglet correspondant du menu principal.
-3.  **Barre de navigation latérale dynamique (Scroll-Spy) :**
-    *   Au clic sur les liens de l'index d'une page (ex: Lieux de vie, Sport, Santé), le focus se déplace harmonieusement.
-    *   Lors du défilement manuel, le script calcule les positions relatives des sections et active automatiquement le lien correspondant dans le menu latéral.
-4.  **Validation du formulaire d'inscription :** Le script vérifie la présence de champs vides dans le formulaire et, si tout est conforme, affiche une boîte de dialogue de confirmation d'inscription.
+1. **Centraliser l'information** — Regrouper en un seul portail toutes les informations clés : actualités, formations, administration, vie de campus et procédures de scolarité.
+2. **Faciliter le parcours étudiant** — Proposer des guides pas-à-pas pour l'inscription des nouveaux bacheliers (Campusen) et la réinscription des anciens étudiants (ESPET), accompagnés d'un tableau clair des frais de scolarité.
+3. **Présenter l'université** — Offrir une vitrine numérique valorisant les formations (Licence, Master, Doctorat), les campus physiques (Site VCN, ENSA, Hôtel du Rail) et les services (sport, santé, transport).
+4. **Offrir une expérience utilisateur fluide** — Intégrer des mécanismes d'interactivité (navigation collante, scroll-spy latéral, formulaires dynamiques) pour une navigation intuitive et agréable.
+5. **Garantir l'accessibilité** — Concevoir un site statique léger, ne nécessitant aucun serveur d'application, ouvrable directement dans un navigateur web.
 
 ---
 
-## 🎨 Styles et Charte Graphique
+## ⚡ Fonctionnalités Disponibles
 
-*   **Fichiers CSS modulaires :** Chaque grande section a sa propre feuille de style pour maintenir une séparation claire des responsabilités de design.
-*   **`links.css` :** Structure globale, reset de base, styles du menu de navigation (avec effets de survol et transitions fluides) et style harmonieux du pied de page (Footer).
-*   **Responsive Web Design :** Utilisation de conteneurs flexibles (`flexbox` et `grid`) assurant un affichage optimal sur ordinateurs et appareils mobiles.
+### 🏠 Page d'Accueil (`index.html`)
+- Flux d'**actualités** : appels à candidatures (Master MPCA, Master BFA) et offres de bourses (Ashinaga, Conseil Indien des Relations Culturelles).
+- Présentation des **UFR, Instituts et Écoles** de l'université avec leur organisation.
+- Bandeau des **partenaires** stratégiques.
+
+### 🏛️ Administration (`admin.html`)
+- **Effectifs enseignants** : répartition par grade (Professeurs Titulaires, Assimilés, Maîtres de Conférences, Assistants).
+- **Personnel administratif (P.A.O.)** : répartition des cadres administratifs, techniques et ouvriers.
+- **Services administratifs** : description du Rectorat, de la DAAP, de la Direction des Services Communs (informatique, matériel, personnel).
+- Navigation latérale dynamique (**scroll-spy**) pour un accès rapide aux sections.
+
+### 📚 Offre de Formation (`cours.html`)
+- Catalogue des formations par cycle : **Licence**, **Master**, **Doctorat**.
+- Présentation des **Écoles et Instituts professionnels** (ENSA, IUT, ISFAR) et de leurs diplômes.
+- Navigation latérale avec scroll-spy.
+
+### 🌳 Campus Social (`campus.html`)
+- **Lieux de vie** : détails des 3 sites physiques (VCN, ENSA, Hôtel du Rail) avec photos, coordonnées GPS et numéros de téléphone.
+- **Logement & Transport** : conseils pratiques et tarifs (clandos, bus TATA, bus du CROUS).
+- **Sport** : activités disponibles (football, basket, handball) avec galerie photos.
+- **Service médical** : informations sur la prise en charge (80% des ordonnances couvertes).
+- **Formulaire de demande de relevé de notes** : formulaire stylisé avec dépôt de pièce justificative (Quitus) au format PNG/JPG/PDF.
+
+### 🎓 Scolarité (`scolarite.html`)
+- **Guide d'inscription des nouveaux bacheliers** (via Campusen) : étapes détaillées.
+- **Guide de réinscription des anciens étudiants** (via ESPET) : procédure en ligne.
+- **Inscription pédagogique** : documents nécessaires et démarches auprès des UFR.
+- **Grille tarifaire** : tableau synthétique des droits d'inscription par cycle.
+
+| Cycle | Droit pédagogique | Droit administratif | **Total** |
+| :--- | :---: | :---: | :---: |
+| Licence | 10 000 FCFA | 15 000 FCFA | **25 000 FCFA** |
+| Master | 10 000 FCFA | 40 000 FCFA | **50 000 FCFA** |
+| Doctorat | 20 000 FCFA | 55 000 FCFA | **75 000 FCFA** |
+
+### 📝 Inscription en Ligne (`inscrire.html`)
+- Formulaire d'inscription dynamique avec :
+  - Saisie des informations personnelles (nom, prénom, n° de dossier, email, adresse, téléphone).
+  - Sélection de l'UFR et de la filière.
+  - Choix du mode de paiement mobile (Orange Money, Wave, Free Money).
+- Validation HTML5 native des champs requis.
+
+### 🔧 Interactivité Globale (`all.js`)
+- **Menu de navigation sticky** : la barre de navigation se fixe en haut de l'écran lors du défilement.
+- **Indicateur de page active** : l'onglet correspondant à la page courante est visuellement mis en évidence.
+- **Scroll-spy latéral** : la barre de navigation latérale (pages Admin, Campus, Cours) se synchronise automatiquement avec le défilement.
+- **Design responsive** : adaptation automatique de la mise en page sur smartphones et tablettes grâce aux media queries CSS.
 
 ---
 
 ## 🚀 Comment Exécuter le Projet
 
-Le projet étant entièrement statique, aucun serveur d'application n'est nécessaire pour le développement local.
+Le projet est entièrement statique. Aucune installation ni serveur n'est nécessaire.
 
-1.  Téléchargez ou clonez le dépôt.
-2.  Double-cliquez sur le fichier `index.html` pour ouvrir le site directement dans votre navigateur web préféré.
-3.  Vous pouvez également utiliser des extensions de type **Live Server** (dans VS Code) pour bénéficier du rafraîchissement automatique lors de la modification des fichiers HTML/CSS/JS.
+1. **Clonez** le dépôt ou téléchargez l'archive ZIP.
+2. Ouvrez le fichier **`index.html`** dans votre navigateur web.
+3. *(Optionnel)* Utilisez l'extension **Live Server** de VS Code pour bénéficier du rechargement automatique lors du développement.
 
 ---
 
-## ⚖️ Droits d'auteur
+## 📁 Structure du Projet
 
-*   **Année :** 2022 / 2026
-*   **Institution :** Université Iba Der Thiam de Thiès (UIDT) - Tous droits réservés.
+```text
+Portail_UIDT_site_statique/
+│
+├── index.html / index.css          # Page d'accueil
+├── admin.html / admin.css          # Page administration
+├── campus.html / campus.css        # Page campus social
+├── cours.html / cours.css          # Page offre de formation
+├── scolarite.html / scolarite.css  # Page scolarité & inscription
+├── inscrire.html / inscrire.css    # Formulaire d'inscription
+│
+├── links.css                       # Styles partagés (header, footer, aside, responsive)
+├── all.js                          # Logique JavaScript globale
+│
+├── css/                            # Feuilles de style FontAwesome
+├── fonts/                          # Police Ubuntu (locale)
+├── webfonts/                       # Fichiers binaires FontAwesome
+└── images/                         # Photos des campus, icônes, illustrations
+```
+
+---
+
+## ⚖️ Droits d'Auteur
+
+- **Année universitaire** : 2022 – 2023 (L2)
+- **Institution** : Université Iba Der Thiam de Thiès (UIDT).
