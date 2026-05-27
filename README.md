@@ -28,49 +28,43 @@ Le projet vise à répondre à la problématique ci-dessus à travers les object
 
 ## ⚡ Fonctionnalités Disponibles
 
-##### Page d'Accueil (`index.html`)
+#### Page d'Accueil
 - Flux d'**actualités** : appels à candidatures (Master MPCA, Master BFA) et offres de bourses (Ashinaga, Conseil Indien des Relations Culturelles).
 - Présentation des **UFR, Instituts et Écoles** de l'université avec leur organisation.
 - Bandeau des **partenaires** stratégiques.
 
-##### Administration (`admin.html`)
+#### Administration
 - **Effectifs enseignants** : répartition par grade (Professeurs Titulaires, Assimilés, Maîtres de Conférences, Assistants).
 - **Personnel administratif (P.A.O.)** : répartition des cadres administratifs, techniques et ouvriers.
 - **Services administratifs** : description du Rectorat, de la DAAP, de la Direction des Services Communs (informatique, matériel, personnel).
 - Navigation latérale dynamique (**scroll-spy**) pour un accès rapide aux sections.
 
-##### Offre de Formation (`cours.html`)
+#### Offre de Formation
 - Catalogue des formations par cycle : **Licence**, **Master**, **Doctorat**.
 - Présentation des **Écoles et Instituts professionnels** (ENSA, IUT, ISFAR) et de leurs diplômes.
 - Navigation latérale avec scroll-spy.
 
-##### Campus Social (`campus.html`)
+#### Campus Social
 - **Lieux de vie** : détails des 3 sites physiques (VCN, ENSA, Hôtel du Rail) avec photos, coordonnées GPS et numéros de téléphone.
 - **Logement & Transport** : conseils pratiques et tarifs (clandos, bus TATA, bus du CROUS).
 - **Sport** : activités disponibles (football, basket, handball) avec galerie photos.
 - **Service médical** : informations sur la prise en charge (80% des ordonnances couvertes).
 - **Formulaire de demande de relevé de notes** : formulaire stylisé avec dépôt de pièce justificative (Quitus) au format PNG/JPG/PDF.
 
-##### Scolarité (`scolarite.html`)
+#### Scolarité
 - **Guide d'inscription des nouveaux bacheliers** (via Campusen) : étapes détaillées.
 - **Guide de réinscription des anciens étudiants** (via ESPET) : procédure en ligne.
 - **Inscription pédagogique** : documents nécessaires et démarches auprès des UFR.
 - **Grille tarifaire** : tableau synthétique des droits d'inscription par cycle.
 
-| Cycle | Droit pédagogique | Droit administratif | **Total** |
-| :--- | :---: | :---: | :---: |
-| Licence | 10 000 FCFA | 15 000 FCFA | **25 000 FCFA** |
-| Master | 10 000 FCFA | 40 000 FCFA | **50 000 FCFA** |
-| Doctorat | 20 000 FCFA | 55 000 FCFA | **75 000 FCFA** |
-
-##### Inscription en Ligne (`inscrire.html`)
+#### Inscription en Ligne (`inscrire.html`)
 - Formulaire d'inscription dynamique avec :
   - Saisie des informations personnelles (nom, prénom, n° de dossier, email, adresse, téléphone).
   - Sélection de l'UFR et de la filière.
   - Choix du mode de paiement mobile (Orange Money, Wave, Free Money).
 - Validation HTML5 native des champs requis.
 
-##### Interactivité Globale (`all.js`)
+#### Interactivité Globale (`all.js`)
 - **Menu de navigation sticky** : la barre de navigation se fixe en haut de l'écran lors du défilement.
 - **Indicateur de page active** : l'onglet correspondant à la page courante est visuellement mis en évidence.
 - **Scroll-spy latéral** : la barre de navigation latérale (pages Admin, Campus, Cours) se synchronise automatiquement avec le défilement.
@@ -78,7 +72,7 @@ Le projet vise à répondre à la problématique ci-dessus à travers les object
 
 ---
 
-#### Comment Exécuter le Projet
+### Comment Exécuter le Projet
 
 Le projet est entièrement statique. Aucune installation ni serveur n'est nécessaire.
 
@@ -88,30 +82,9 @@ Le projet est entièrement statique. Aucune installation ni serveur n'est néces
 
 ---
 
-#### Structure du Projet
-
-```text
-Portail_UIDT_site_statique/
-│
-├── index.html / index.css          # Page d'accueil
-├── admin.html / admin.css          # Page administration
-├── campus.html / campus.css        # Page campus social
-├── cours.html / cours.css          # Page offre de formation
-├── scolarite.html / scolarite.css  # Page scolarité & inscription
-├── inscrire.html / inscrire.css    # Formulaire d'inscription
-│
-├── links.css                       # Styles partagés (header, footer, aside, responsive)
-├── all.js                          # Logique JavaScript globale
-│
-├── css/                            # Feuilles de style FontAwesome
-├── fonts/                          # Police Ubuntu (locale)
-├── webfonts/                       # Fichiers binaires FontAwesome
-└── images/                         # Photos des campus, icônes, illustrations
-```
-
 ---
 
-#### Droits d'Auteur
+### Droits d'Auteur
 
 - **Année universitaire** : 2022 – 2023 (L2)
 - **Institution** : Université Iba Der Thiam de Thiès (UIDT).
