@@ -1,10 +1,10 @@
-# 🎓 Portail UIDT — Site Web Statique
+## 🎓 Portail UIDT — Site Web Statique
 
-> Portail d'information de l'Université Iba Der Thiam de Thiès (Sénégal)
+Portail d'information de l'Université Iba Der Thiam de Thiès
 
 ---
 
-## 📌 Présentation du Projet
+#### Présentation du Projet
 
 Ce projet est un **site web statique** conçu dans le cadre d'un **projet académique** durant l'année universitaire **2022 – 2023**, en **deuxième année de Licence (L2)** à l'Université Iba Der Thiam de Thiès (UIDT).
 
@@ -22,25 +22,7 @@ Le site a été entièrement développé **sans framework ni librairie externe**
 
 ---
 
-## 🧩 Contexte et Problématique
-
-L'**Université Iba Der Thiam de Thiès** est un établissement public d'enseignement supérieur sénégalais à forte orientation professionnelle. Elle regroupe **4 UFR** (Sciences Économiques et Sociales, Sciences et Technologies, Sciences de la Santé, Sciences de l'Ingénieur), **2 Instituts** (IUT, ISFAR) et **1 École Supérieure** (ENSA).
-
-### Constat
-
-À l'époque de la réalisation du projet, les étudiants de l'UIDT faisaient face à plusieurs difficultés :
-
-- **Informations dispersées** : les renseignements sur les procédures d'inscription, les frais de scolarité, la vie de campus et l'organisation administrative étaient répartis sur plusieurs supports (affichages physiques, groupes WhatsApp, bouche-à-oreille), sans point d'accès centralisé et fiable.
-- **Parcours étudiant peu lisible** : les nouveaux bacheliers orientés via Campusen et les anciens étudiants ne disposaient pas d'un guide clair et unifié décrivant les étapes d'inscription (administrative et pédagogique).
-- **Manque de visibilité** : l'université ne disposait pas d'une vitrine web légère et accessible présentant ses formations, ses campus et ses services de manière structurée.
-
-### Problématique
-
-> **Comment centraliser et présenter de manière claire, accessible et interactive l'ensemble des informations essentielles à la vie universitaire de l'UIDT, à destination des étudiants, du personnel et du grand public ?**
-
----
-
-## 🎯 Objectifs
+### Objectifs
 
 Le projet vise à répondre à la problématique ci-dessus à travers les objectifs suivants :
 
@@ -54,30 +36,30 @@ Le projet vise à répondre à la problématique ci-dessus à travers les object
 
 ## ⚡ Fonctionnalités Disponibles
 
-### 🏠 Page d'Accueil (`index.html`)
+##### Page d'Accueil (`index.html`)
 - Flux d'**actualités** : appels à candidatures (Master MPCA, Master BFA) et offres de bourses (Ashinaga, Conseil Indien des Relations Culturelles).
 - Présentation des **UFR, Instituts et Écoles** de l'université avec leur organisation.
 - Bandeau des **partenaires** stratégiques.
 
-### 🏛️ Administration (`admin.html`)
+##### Administration (`admin.html`)
 - **Effectifs enseignants** : répartition par grade (Professeurs Titulaires, Assimilés, Maîtres de Conférences, Assistants).
 - **Personnel administratif (P.A.O.)** : répartition des cadres administratifs, techniques et ouvriers.
 - **Services administratifs** : description du Rectorat, de la DAAP, de la Direction des Services Communs (informatique, matériel, personnel).
 - Navigation latérale dynamique (**scroll-spy**) pour un accès rapide aux sections.
 
-### 📚 Offre de Formation (`cours.html`)
+##### Offre de Formation (`cours.html`)
 - Catalogue des formations par cycle : **Licence**, **Master**, **Doctorat**.
 - Présentation des **Écoles et Instituts professionnels** (ENSA, IUT, ISFAR) et de leurs diplômes.
 - Navigation latérale avec scroll-spy.
 
-### 🌳 Campus Social (`campus.html`)
+##### Campus Social (`campus.html`)
 - **Lieux de vie** : détails des 3 sites physiques (VCN, ENSA, Hôtel du Rail) avec photos, coordonnées GPS et numéros de téléphone.
 - **Logement & Transport** : conseils pratiques et tarifs (clandos, bus TATA, bus du CROUS).
 - **Sport** : activités disponibles (football, basket, handball) avec galerie photos.
 - **Service médical** : informations sur la prise en charge (80% des ordonnances couvertes).
 - **Formulaire de demande de relevé de notes** : formulaire stylisé avec dépôt de pièce justificative (Quitus) au format PNG/JPG/PDF.
 
-### 🎓 Scolarité (`scolarite.html`)
+##### Scolarité (`scolarite.html`)
 - **Guide d'inscription des nouveaux bacheliers** (via Campusen) : étapes détaillées.
 - **Guide de réinscription des anciens étudiants** (via ESPET) : procédure en ligne.
 - **Inscription pédagogique** : documents nécessaires et démarches auprès des UFR.
@@ -89,14 +71,14 @@ Le projet vise à répondre à la problématique ci-dessus à travers les object
 | Master | 10 000 FCFA | 40 000 FCFA | **50 000 FCFA** |
 | Doctorat | 20 000 FCFA | 55 000 FCFA | **75 000 FCFA** |
 
-### 📝 Inscription en Ligne (`inscrire.html`)
+##### Inscription en Ligne (`inscrire.html`)
 - Formulaire d'inscription dynamique avec :
   - Saisie des informations personnelles (nom, prénom, n° de dossier, email, adresse, téléphone).
   - Sélection de l'UFR et de la filière.
   - Choix du mode de paiement mobile (Orange Money, Wave, Free Money).
 - Validation HTML5 native des champs requis.
 
-### 🔧 Interactivité Globale (`all.js`)
+##### Interactivité Globale (`all.js`)
 - **Menu de navigation sticky** : la barre de navigation se fixe en haut de l'écran lors du défilement.
 - **Indicateur de page active** : l'onglet correspondant à la page courante est visuellement mis en évidence.
 - **Scroll-spy latéral** : la barre de navigation latérale (pages Admin, Campus, Cours) se synchronise automatiquement avec le défilement.
@@ -104,7 +86,7 @@ Le projet vise à répondre à la problématique ci-dessus à travers les object
 
 ---
 
-## 🚀 Comment Exécuter le Projet
+#### Comment Exécuter le Projet
 
 Le projet est entièrement statique. Aucune installation ni serveur n'est nécessaire.
 
@@ -114,7 +96,7 @@ Le projet est entièrement statique. Aucune installation ni serveur n'est néces
 
 ---
 
-## 📁 Structure du Projet
+#### Structure du Projet
 
 ```text
 Portail_UIDT_site_statique/
@@ -137,7 +119,7 @@ Portail_UIDT_site_statique/
 
 ---
 
-## ⚖️ Droits d'Auteur
+#### Droits d'Auteur
 
 - **Année universitaire** : 2022 – 2023 (L2)
 - **Institution** : Université Iba Der Thiam de Thiès (UIDT).
