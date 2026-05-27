@@ -2,9 +2,9 @@
 
 Portail d'information de l'Université Iba Der Thiam de Thiès
 
---
+---
 
-#### Présentation du Projet
+### Présentation du Projet
 
 Ce projet est un **site web statique** conçu dans le cadre d'un **projet académique** durant l'année universitaire **2022 – 2023**, en **deuxième année de Licence (L2)** à l'Université Iba Der Thiam de Thiès (UIDT).
 
