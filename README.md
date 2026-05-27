@@ -10,15 +10,7 @@ Ce projet est un **site web statique** conçu dans le cadre d'un **projet acadé
 
 L'objectif pédagogique était de mettre en pratique les compétences acquises en **développement web front-end** (HTML, CSS, JavaScript) en réalisant un portail d'information fonctionnel et réaliste pour notre propre université.
 
-Le site a été entièrement développé **sans framework ni librairie externe**, en utilisant uniquement les technologies web natives :
-
-| Technologie | Utilisation |
-| :--- | :--- |
-| **HTML5** | Structure sémantique de toutes les pages |
-| **CSS3** | Mise en page (Grid, Flexbox), animations et transitions |
-| **JavaScript (Vanilla)** | Interactivité (menu sticky, scroll-spy, validation de formulaires) |
-| **FontAwesome** | Icônes vectorielles (chargées localement) |
-| **Ubuntu Font** | Police de caractères principale (intégrée localement dans `/fonts`) |
+Le site a été entièrement développé **sans framework ni librairie externe**, en utilisant uniquement les technologies web natives : *HTML - CSS - JS*
 
 ---
 
